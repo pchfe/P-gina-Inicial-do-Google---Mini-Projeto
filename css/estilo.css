@@ -1,0 +1,699 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins&family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(29, 28, 28);
+}
+.principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===================== HEADER =====================*/
+.principal header{
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(32,33,36,1);
+    /* position: fixed; */
+}
+
+.principal header .header-icons{
+    width: 300px;
+    /* height: 100%; */
+    height: 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+/* === icone Apps === */
+.principal header .header-icons .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: none;
+}
+.principal header .header-icons .icon .icon-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: none;
+}
+
+.principal header .header-icons .icon .icon-app i{
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+}
+.principal header .header-icons p{
+    color: white;
+    font-size: small;
+}
+.principal header .header-icons .icon .icon-app i:hover{
+    background: none;
+}
+.principal header .header-icons .icon:hover{
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+    
+}
+.principal header .header-icons p:hover{
+    text-decoration: underline;
+}
+
+
+/* == icone - Perfil == */
+.principal header .header-icons .header-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: none;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.principal header .header-icons .header-profile .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(8, 134, 218);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.principal header .header-icons
+.header-profile:hover{
+    background-color: rgb(54, 54, 54);
+}
+
+.principal header .header-icons
+.header-profile i:hover{
+    background: none;
+}
+.principal header .header-icons
+.header-profile i:hover{
+    width: 24px;
+    height: 24px;
+    box-shadow: 0px 0px 1px 3px rgb(37, 37, 37);
+}
+
+
+/* == card de Apps == */
+header .card-apps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 450px;
+    z-index: 4;
+    background-color: #2d2e30;
+    position: absolute;
+    top: 55px;
+    margin-right: 20px;
+    border-radius: 1.5rem;
+    overflow-y: auto;
+    padding: 0px 0 0 8px;
+    visibility: hidden;
+}
+header .card-apps .apps::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: rgb(44, 44, 44);
+}
+
+header .card-apps .apps::-webkit-scrollbar-thumb{
+    background-color: rgba(110,110,110,1);
+    border-radius: .5rem;
+}
+header .card-apps .apps:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(150, 150, 150);
+}
+
+header .card-apps .apps{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+header .card-apps .apps .ap{
+    width: 100%;
+    height: 500px;
+    background-color: #1b1b1b;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    display: flex;
+}
+header .card-apps .apps .ap1{
+    width: 100%;
+    height: 500px;
+    background-color: #1b1b1b;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Botão do card de apps */
+header .card-apps .apps .ap-button{
+    padding: 0px 0px 25px 100px;
+}
+header .card-apps .apps .ap-button button{
+    width: 150px;
+    height: 40px;
+    border-radius: 1.5rem;
+    outline: none;
+    border: 1px solid rgb(109, 109, 109);
+    background: none;
+    color: #a8c7fa;
+}
+.card-apps .apps .ap-button button:hover{
+    background-color: rgb(53, 57, 61);
+    transition: 0.5s ease-out;
+}
+
+/*Conteudo Apps */
+header .card-apps .apps .ap .ap-icons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 13px;
+}
+header .card-apps .apps .ap .ap-icons .row-ap1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    gap: 16px;
+    color: white;
+    font-size: 14px;
+}
+header .card-apps .apps .ap .ap-icons .row-ap2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    gap: 16px;
+    color: white;
+    font-size: 14px;
+}
+header .card-apps .apps
+.ap .ap-icons .row-ap1{
+    margin-top: 30px;
+}
+
+
+/* icones do card */
+header .card-apps .apps .ap
+.ap-icons .row-ap1 .icon-ap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80px;
+    height: 85px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+header .card-apps .apps .ap
+.ap-icons .row-ap2 .icon-ap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80px;
+    height: 85px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.ap-icons
+.row-ap1 .icon-ap:hover{
+    background-color: rgba(110,110,110,0.50);
+}
+.card-apps .apps .ap .ap-icons
+.row-ap2 .icon-ap:hover{
+    background-color: rgba(110,110,110,0.50);
+}
+
+header .card-apps .apps .ap img{
+    width: 38px;
+    height: 38px;
+    width: auto;
+}
+
+
+
+/* === icone APPS === */
+
+.principal header .header-icons .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: none;
+}
+.principal header .header-icons .icon .icon-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: none;
+}
+.principal header .header-icons .icon .icon-app i{
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+}
+.principal header .header-icons p{
+    color: white;
+    font-size: small;
+}
+.principal header .header-icons .icon .icon-app i:hover{
+    background: none;
+}
+.principal header .header-icons .icon:hover{
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+    
+}
+.principal header .header-icons p:hover{
+    text-decoration: underline;
+}
+
+/* === icone - Perfil == */
+.principal header .header-icons .header-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: none;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.principal header .header-icons .header-profile .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(8, 134, 218);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.principal header .header-icons
+.header-profile:hover{
+    background-color: rgb(54, 54, 54);
+}
+
+.principal header .header-icons
+.header-profile i:hover{
+    background: none;
+}
+.principal header .header-icons
+.header-profile i:hover{
+    width: 24px;
+    height: 24px;
+    box-shadow: 0px 0px 1px 3px rgb(37, 37, 37);
+}
+
+
+
+
+/* ===================== SEARCH - main =====================*/
+
+.principal main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32,33,36,1);
+}
+
+.principal main .main-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 150px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 33px;
+}
+.principal main .box-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 83%;
+    height: 30%;
+    gap: 35px;
+}
+.principal main .box-search .search{/*ok*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 585px;
+    height: 48px;
+    border-top-right-radius: 1.3rem;;
+    border-top-left-radius: 1.3rem;;
+}
+
+
+
+/* ==== Input - Search === */
+
+.principal main .box-search .search .search-input{ /*ok*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 585px;
+    border-radius: 8rem;
+    position: relative;
+}
+.principal main .box-search .search .search-input .in-srch{ /*ok*/
+    display: flex;
+    align-items: center;
+    width: 585px;
+    border-radius: 8rem;
+    height: 48px;
+}
+.principal main .box-search .search .search-input .in-srch:hover{ /*ok*/
+    background-color: rgb(37, 37, 37);
+}
+
+.principal main .box-search .search .search-input input{ /*ok*/
+    width: 100%;
+    height: 48px;
+    border-radius: 8rem;
+    outline: none;
+    background: none;
+    border: none;
+    padding: 0 2px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.principal main .box-search .search .search-input .icon-search{ /*ok*/
+    color: rgb(161, 161, 161);
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.principal main .box-search .search .search-input .icon-keyboard{ /*ok*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    font-size: 18px;
+    background-color: rgb(161, 161, 161);
+    width: 20px;
+    height: 11px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.principal main .box-search .search .search-input .icon-mic{ /*ok*/
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.principal main .box-search .search .search-input .icon-lens{ /*ok*/
+    margin-right: 8px;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ===================== Sugestões da pesquisa - INPUT =====================*/
+.principal main .box-search
+.search .search-input span{ /*ok*/
+    display: flex;
+    justify-content: center;
+}
+.principal main .box-search
+.search .search-input span hr{ /*ok*/
+    display: flex;
+    width: 95%;
+    border: none;
+    border-top: 0.5px solid #838383;
+}
+
+.principal main .box-search
+.search .search-input .box-result{ /*ok*/
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 440px;
+    background-color: rgb(71, 71, 71);
+    top: 48px;
+    border-bottom-right-radius: 1.8rem;
+    border-bottom-left-radius: 1.8rem;
+    box-shadow: 1px 8px 10px -3px rgb(34, 34, 34);
+    z-index: 3;
+}
+.principal main .box-search /*ok*/
+.search .search-input .box-result /* Table - sugestões */
+table{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(46, 46, 46);
+}
+.principal main .box-search
+.search .search-input .box-result /*ok*/
+table thead, tr{
+    display: flex;
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+    flex-direction: column;
+}
+.principal main .box-search
+.search .search-input .box-result /*ok*/
+table thead th{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    color: rgb(139, 138, 138);
+}
+.principal main .box-search
+.search .search-input .box-result /*ok*/
+table tbody tr td{
+    color: rgb(228, 224, 224);
+    padding: 0px 10px 5px 10px;
+}
+.box-result
+table tbody tr{ /*ok*/
+    gap: 6px;
+}
+
+.box-result
+table tbody tr .result-search:hover:nth-child(1n+1){ /*ok*/
+    background-color: rgb(77, 77, 77);
+}
+
+.box-result table tbody tr td .btn{ /*ok*/
+    padding: 42px;
+}
+
+
+
+
+
+
+/* ===================== botoes - PESQUISAR =====================*/
+.principal main .box-search .btn{ /*ok*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 37px;
+    gap: 10px;
+}
+.principal main .box-search .btn button{ /*ok*/
+    width: 140px;
+    height: 35px;
+    border-radius: .3rem;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #e8eaed;
+    background-color: rgb(54, 54, 54);
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.principal main .box-search .btn button:hover{ /*ok*/
+    border: 0.5px solid rgb(94, 94, 94);
+}
+
+/* ===================== footer =====================*/
+
+.principal footer{ /*ok*/
+    width: 100%;
+    height: 108px;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.principal footer .footer-country{ /*ok*/
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    border-bottom: 0.5px solid #3c4043;
+    flex-wrap: wrap;
+}
+.principal footer .footer-country p{ /*ok*/
+    margin-left: 30px;
+    color: #999da2;
+    font-size: 15px
+}
+.principal footer .footer-country, .footer-links p{ /*ok*/
+    /* margin-left: 30px; */
+    color: #999da2;
+    font-size: 15px;
+}
+
+.principal footer .footer-links{ /*ok*/
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    width: 100%;
+    height: 50%;
+}
+.principal footer .footer-links .p1{ /*ok*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 30px;
+    margin-left: 8px;
+}
+.principal footer .footer-links .p2{ /*ok*/
+    display: flex;
+    /* flex-wrap: wrap; */          /*ativar dps*/
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    height: 100%;
+    gap: 30px;
+    margin-left: 8px;
+}
+
+
+.principal footer .footer-links .p1 p{ /*ok*/
+    color: #999da2;
+    font-size: 14px;
+}
+.principal footer .footer-links p:hover{ /*ok*/
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+/* ===================== resultado da pesquisa - INPUT =====================*/
+
+
+
+
+
+
+
+
+/* ===================== alterar css - JS =====================*/
+.bcg-default{
+    background-color: rgba(32,33,36,1);
+}
+.bcg-on{
+    background-color: rgb(46, 46, 46);
+}
+
+
+.border-off{
+    border: 1px solid rgb(94, 94, 94);
+}
+.border-on{
+    border: none;
+}
+.border-none{
+    border: none;
+}
+
+
+/* ====== NO COPY ======= */
+.principal main .box-search /*ok*/
+.search .box-result {
+    visibility: hidden;
+}
+.no-copy{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
