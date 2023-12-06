@@ -14,3 +14,8 @@ E por fim, o JavaScript, responsável por da funcionalidade ao site, como clicar
 
 #### Projeto criado em:
     - 25 de Outubro de 2023
+## Imagens
+
+![App Screenshot](./assets/pagina_inicial_google.png)
+![App Screenshot](./assets/card_de_apps.png)
+![App Screenshot](./assets/barra_de_pesquisa.png)
