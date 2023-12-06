@@ -16,6 +16,6 @@ E por fim, o JavaScript, responsável por da funcionalidade ao site, como clicar
     - 25 de Outubro de 2023
 ## Imagens
 
-![App Screenshot](./assets/pagina_inicial_google.png)
-![App Screenshot](./assets/card_de_apps.png)
-![App Screenshot](./assets/barra_de_pesquisa.png)
+![App Screenshot](https://github.com/pchfe/P-gina-Inicial-do-Google---Mini-Projeto/blob/main/assets/barra_de_pesquisa.PNG)
+![App Screenshot](https://github.com/pchfe/P-gina-Inicial-do-Google---Mini-Projeto/blob/main/assets/card_de_apps.PNG)
+![App Screenshot](https://github.com/pchfe/P-gina-Inicial-do-Google---Mini-Projeto/blob/main/assets/pagina_inicial_google.PNG)
